@@ -27,8 +27,11 @@
 # Внешний вид программы (CLI)
 <img width="979" height="512" alt="image" src="https://github.com/user-attachments/assets/f1238124-8a0b-471c-82b3-6f52e099774a" />
 
-# Внешний вид (GUI)
+# Внешний вид (GUI windows)
 <img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/d111eaf1-598c-49d1-af20-c1d761b9a83f" />
+
+# Внешний вид (GUI linux)
+<img width="320" height="608" alt="image" src="https://github.com/user-attachments/assets/f5f28cdf-f87f-4361-8a9f-e2c5daa6263d" />
 
 # Выбор режима отображение
 По умолчанию программа отображается в режиме GUI, а для CLI нужно всего лишь создать файл `CLI_MODE`, без расширение, рядом с программой
