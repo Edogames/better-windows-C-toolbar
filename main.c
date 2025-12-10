@@ -711,9 +711,9 @@ int main_gui_function(int argc, char *argv[], HINSTANCE hInstance, int nCmdShow,
         NULL
     );
 
-    add_button(L"Up",           hwnd, 10,  10,  80, 40, 1001);
-    add_button(L"Refresh",      hwnd, 100, 10,  80, 40, 1002);
-    add_button(L"Quit",         hwnd, 190, 10,  80, 40, 1003);
+    add_button(L"↑",           hwnd, 10,  10,  80, 40, 1001);
+    add_button(L"🗘",      hwnd, 100, 10,  80, 40, 1002);
+    add_button(L"×",         hwnd, 190, 10,  80, 40, 1003);
 
     // Initial scan and button creation
     create_file_buttons(argc, argv);
@@ -1004,9 +1004,9 @@ void draw_window() {
     draw_text(g_x11_state.display, g_x11_state.window, g_x11_state.gc, 10, 60, g_x11_state.dirpath);
     
     // Draw control buttons
-    draw_button(g_x11_state.display, g_x11_state.window, g_x11_state.gc, 10, 10, 80, 40, "Up", 0);
-    draw_button(g_x11_state.display, g_x11_state.window, g_x11_state.gc, 100, 10, 80, 40, "Refresh", 0);
-    draw_button(g_x11_state.display, g_x11_state.window, g_x11_state.gc, 190, 10, 80, 40, "Quit", 0);
+    draw_button(g_x11_state.display, g_x11_state.window, g_x11_state.gc, 10, 10, 80, 40, "↑", 0);
+    draw_button(g_x11_state.display, g_x11_state.window, g_x11_state.gc, 100, 10, 80, 40, "🗘", 0);
+    draw_button(g_x11_state.display, g_x11_state.window, g_x11_state.gc, 190, 10, 80, 40, "×", 0);
     
     // === CLIPPING FOR FILE BUTTONS ===
     XRectangle clip_rect;
@@ -1393,3 +1393,4 @@ int main(int argc, char *argv[]) {
 }
 
 #endif  // !_WIN32
+
