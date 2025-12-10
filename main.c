@@ -703,6 +703,15 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
     switch (uMsg) {
+        case WM_ACTIVATE: {
+            // If the window becomes inactive (user switched to another window), quit.
+            if (LOWORD(wParam) == WA_INACTIVE) {
+                PostQuitMessage(0);
+                return 0;
+            }
+            break;
+        }
+        
         case WM_COMMAND: {
             int id = LOWORD(wParam);  // Button ID
 
